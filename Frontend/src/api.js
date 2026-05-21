@@ -1,4 +1,5 @@
-const BASE = import.meta.env.VITE_API_URL || '/api/v1';
+const envUrl = import.meta.env.VITE_API_URL;
+const BASE = envUrl ? (envUrl.endsWith('/api/v1') ? envUrl : `${envUrl}/api/v1`) : '/api/v1';
 
 const getToken = () => localStorage.getItem('rt_token');
 
