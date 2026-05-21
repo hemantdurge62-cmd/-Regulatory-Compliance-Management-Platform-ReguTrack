@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+Frontend/node_modules/
+Backend/node_modules/
+
+# Environment variables (NEVER push these to GitHub!)
+.env
+.env.local
+.env.development
+.env.production
+Frontend/.env
+Backend/.env
+*.env
+
+# Build output
+dist/
+build/
+Frontend/dist/
+Frontend/build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Cache
+.cache/
+.parcel-cache/
